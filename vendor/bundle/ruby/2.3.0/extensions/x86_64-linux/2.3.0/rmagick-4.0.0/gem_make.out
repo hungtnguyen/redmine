@@ -1,0 +1,59 @@
+current directory: /home/redmine/redmine/vendor/bundle/ruby/2.3.0/gems/rmagick-4.0.0/ext/RMagick
+/usr/local/rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20190714-25471-bo7fjr.rb extconf.rb
+checking for brew... no
+checking for pacman... no
+checking for gcc... yes
+checking for pkg-config... yes
+
+Warning: Found more than one ImageMagick installation. This could cause problems at runtime.
+ - ImageMagick
+ - ImageMagick
+ - ImageMagick
+ - ImageMagick
+
+checking for outdated ImageMagick version (<= 6.7.7)... no
+checking for __GNUC__... yes
+checking for Ruby version >= 2.3.0... yes
+checking for magick/MagickCore.h... yes
+checking for GetImageChannelEntropy() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,magick/MagickCore.h... no
+checking for SetImageGray() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,sys/types.h,magick/MagickCore.h... no
+creating extconf.h
+creating Makefile
+
+
+======================================================================
+Sun 14 Jul 19 19:39:18
+This installation of RMagick 4.0.0 is configured for
+Ruby 2.3.3 (x86_64-linux) and ImageMagick 6.8.9
+======================================================================
+
+
+Configured compile options: {:magick_version=>"6.8.9", :local_libs=>" -lMagickCore-6.Q16", :cflags=>" -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/x86_64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 -std=gnu99", :cppflags=>" -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/x86_64-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6", :ldflags=>" -lMagickCore-6.Q16", :defs=>[], :config_h=>"Makefile rmagick.h"}
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/redmine/redmine/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0/rmagick-4.0.0/mkmf.log
+
+current directory: /home/redmine/redmine/vendor/bundle/ruby/2.3.0/gems/rmagick-4.0.0/ext/RMagick
+make "DESTDIR=" clean
+
+current directory: /home/redmine/redmine/vendor/bundle/ruby/2.3.0/gems/rmagick-4.0.0/ext/RMagick
+make "DESTDIR="
+compiling rmpixel.c
+compiling rmkinfo.c
+compiling rmstruct.c
+compiling rminfo.c
+compiling rmmontage.c
+compiling rmmain.c
+compiling rmutil.c
+compiling rmilist.c
+compiling rmagick.c
+compiling rmenum.c
+compiling rmdraw.c
+compiling rmfill.c
+compiling rmimage.c
+linking shared-object RMagick2.so
+
+current directory: /home/redmine/redmine/vendor/bundle/ruby/2.3.0/gems/rmagick-4.0.0/ext/RMagick
+make "DESTDIR=" install
+/usr/bin/install -m 0755 RMagick2.so ./.gem.20190714-25471-o1nhhw
